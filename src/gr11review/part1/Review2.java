@@ -9,6 +9,7 @@ public class Review2 {
      * A program that outputs a joke based on the user's menu option
      * @author: Joshua Yin
      */
+
      public static void main(String [] args) throws IOException {
 
         // Declare variables
@@ -29,22 +30,32 @@ public class Review2 {
 
         // Switch case to output joke based on option
         switch (intOption) {
+
+            // Case 0: output joke about hair
             case 0:
                 System.out.println("Why do bees have sticky hair?");
                 System.out.println("They always use honeycombs.");
                 break;
+
+            // Case 1: output joke about feet
             case 1:
                 System.out.println("Why did the golfer take an extra pair of socks?");
                 System.out.println("In case he got a hole in one!");
                 break;
+
+            // Case 2: output joke about clothes
             case 2:
                 System.out.println("Why don't clothes ever go on vacation?");
                 System.out.println("Because they're always packed!");
                 break;
+
+            // Case 3: output joke about teacher
             case 3:
                 System.out.println("Why did the teacher write on the window?");
                 System.out.println("Because she wanted the lesson to be very clear.");
                 break;
+            
+            // Default case: invalid menu option
             default:
                 System.out.println("Invalid menu option.");
                 break;

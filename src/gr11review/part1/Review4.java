@@ -8,6 +8,7 @@ import java.text.DecimalFormat;
      * A program that calculates the subtotal, tax, and total of items based on user input
      * @author: Joshua Yin
      */
+    
     public static void main (String [] args) throws IOException {
 
         // Declare variables

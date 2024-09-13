@@ -10,6 +10,7 @@ public class Review1 {
      * A program that asks the user for a month number and a day number and then calculates the day of the year
      * @author: Joshua Yin
      */
+    
     public static void main (String[] args) throws IOException {
 
         // Declare variables

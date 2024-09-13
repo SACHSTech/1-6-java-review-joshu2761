@@ -7,6 +7,7 @@ import java.io.*;
      * A program that calculates the number of years it will take to reach a target amount based on yearly invested amount, compound interest rate, and target amount
      * @author: Joshua Yin
      */
+    
     public static void main (String [] args) throws IOException {
 
         // Declare variables
