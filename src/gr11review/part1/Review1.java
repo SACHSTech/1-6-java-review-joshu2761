@@ -1,6 +1,8 @@
 package gr11review.part1;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Review1 {
 
@@ -17,7 +19,7 @@ public class Review1 {
         int [] intDaysInMonth;
 
         // Declare BufferedReader for user input
-        java.io.BufferedReader dateReader = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+        BufferedReader dateReader = new BufferedReader(new InputStreamReader(System.in));
         
         // Initialize intDayOfYear
         intDayOfYear = 0;

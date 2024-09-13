@@ -7,10 +7,10 @@ import java.io.*;
      * A program that calculates stats about a sentence such as the number of characters, spaces, and letter a, and outputs a string with dashes for every odd character in the sentence
      * @author: Joshua Yin
      */
-    public static void main (String [] args) {
+    public static void main (String [] args) throws IOException {
 
         // Declare variables
-        String theSentence;
+        String strSentence;
         int intCharacters;
         int intSpaces;
         int intLetterA;
@@ -27,19 +27,15 @@ import java.io.*;
 
         // Ask user for a sentence
         System.out.print("Enter a sentence: ");
-        try {
-            theSentence = sentenceReader.readLine();
-        } catch (IOException e) {
-            theSentence = "";
-        }
+        strSentence = sentenceReader.readLine();
 
         // Calculate stats about the sentence
-        for (int i = 0; i < theSentence.length(); i++) {
+        for (int i = 0; i < strSentence.length(); i++) {
             intCharacters++;
-            if (theSentence.charAt(i) == ' ') {
+            if (strSentence.charAt(i) == ' ') {
                 intSpaces++;
             }
-            if (theSentence.charAt(i) == 'a') {
+            if (strSentence.charAt(i) == 'a') {
                 intLetterA++;
             }
             if (i % 2 == 0) {

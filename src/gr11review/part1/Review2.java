@@ -1,5 +1,7 @@
 package gr11review.part1;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Review2 {
 
@@ -13,7 +15,7 @@ public class Review2 {
         int intOption;
         
         // BufferedReader for user input
-        java.io.BufferedReader optionReader = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+        BufferedReader optionReader = new BufferedReader(new InputStreamReader(System.in));
 
         // Ask user for option
         System.out.println("0 - print a joke about your hair");

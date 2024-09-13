@@ -24,6 +24,7 @@ public class Review6 {
 
         // Initialize variables
         dblSubtotal = 0;
+        decimalFormat = new DecimalFormat("$0.00");
 
         // Ask user for price of an item
         System.out.print("Enter the price for an item: ");
@@ -41,7 +42,6 @@ public class Review6 {
         dblTotal = dblSubtotal + dblTax;
 
         // Output subtotal, tax, and total
-        decimalFormat = new DecimalFormat("$0.00");
         System.out.println("Subtotal: " + decimalFormat.format(dblSubtotal));
         System.out.println("Tax: " + decimalFormat.format(dblTax));
         System.out.println("Total: " + decimalFormat.format(dblTotal));

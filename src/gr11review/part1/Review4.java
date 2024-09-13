@@ -1,5 +1,6 @@
 package gr11review.part1;
 import java.io.*;
+import java.text.DecimalFormat;
 
  public class Review4 {
     
@@ -17,10 +18,10 @@ import java.io.*;
         double dblTotal;
 
         // Declare DecimalFormat
-        java.text.DecimalFormat df = new java.text.DecimalFormat("0.00");
+        DecimalFormat df = new DecimalFormat("0.00");
 
         // BufferedReader for user input
-        java.io.BufferedReader itemReader = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+        BufferedReader itemReader = new BufferedReader(new InputStreamReader(System.in));
 
         // Ask user for number of items
         System.out.print("How many items do you want to buy? ");
