@@ -57,7 +57,7 @@ public class Review2 {
             
             // Default case: invalid menu option
             default:
-                System.out.println("Invalid menu option.");
+                System.out.println("Invalid menu option");
                 break;
         }
      }

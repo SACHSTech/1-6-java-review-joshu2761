@@ -14,6 +14,7 @@ import java.io.*;
         double dbl_yearly_amount;
         double dbl_compound_interest_rate;
         double dbl_target_amount;
+        double dbl_total_amount;
         int int_number_of_years;
 
         // BufferedReader for user input
@@ -21,6 +22,7 @@ import java.io.*;
         
         // Initialize number of years variable
         int_number_of_years = 0;
+        dbl_total_amount = 0;
 
         // Ask user for yearly invested amount
         System.out.print("Enter the yearly invested amount: ");
@@ -35,8 +37,8 @@ import java.io.*;
         dbl_target_amount = Double.parseDouble(interestReader.readLine());
 
         // Loop to calculate number of years
-        while (dbl_yearly_amount < dbl_target_amount) {
-            dbl_yearly_amount += dbl_yearly_amount * (dbl_compound_interest_rate / 100);
+        while (dbl_total_amount < dbl_target_amount) {
+            dbl_total_amount = (dbl_total_amount + dbl_yearly_amount)  * (dbl_compound_interest_rate / 100 + 1);
             int_number_of_years++;
         }
 

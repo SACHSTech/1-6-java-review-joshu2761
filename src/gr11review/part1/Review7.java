@@ -26,7 +26,6 @@ import java.io.*;
         strOddCharacters = "";
 
         // Ask user for a sentence
-        System.out.print("Enter a sentence: ");
         strSentence = sentenceReader.readLine();
 
         // Calculate stats about the sentence
